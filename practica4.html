@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Formulario de Registro</title>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center px-10">
+
+    <div class="max-w-7xl w-full grid md:grid-cols-2 gap-20 items-center">
+
+        <!-- Texto izquierdo -->
+        <div>
+            <h1 class="text-7xl font-extrabold text-slate-900 leading-none mb-8">
+                Formulario de <br> registro
+            </h1>
+
+            <p class="text-gray-500 text-2xl leading-relaxed max-w-xl">
+                A continuación se muestra un formulario de ejemplo
+                construido completamente con los controles de formulario de
+                Html. Cada grupo de formulario requerido tiene un estado de
+                validación que puede activarse al intentar enviar el formulario
+                sin completarlo
+            </p>
+        </div>
+
+        <!-- Formulario -->
+        <div class="bg-white p-12 rounded-3xl shadow-lg">
+
+            <form class="space-y-6">
+
+                <div>
+                    <label class="block text-slate-900 font-bold text-xl mb-3">
+                        Correo
+                    </label>
+
+                    <input
+                        type="email"
+                        placeholder="Email address"
+                        class="w-full border border-gray-300 rounded-xl px-6 py-5 text-xl outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                </div>
+
+                <div>
+                    <label class="block text-slate-900 font-bold text-xl mb-3">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        class="w-full border border-gray-300 rounded-xl px-6 py-5 text-xl outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <input
+                        type="checkbox"
+                        class="w-6 h-6 border-gray-300 rounded"
+                    >
+
+                    <label class="font-bold text-slate-900 text-xl">
+                        Recordarme
+                    </label>
+                </div>
+
+                <button
+                    type="submit"
+                    class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold text-2xl py-5 rounded-xl transition"
+                >
+                    Registrarse
+                </button>
+
+                <p class="text-center text-gray-400 text-lg mt-6">
+                    Al hacer clic en Registrarse, aceptas los términos de uso..
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
